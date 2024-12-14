@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!--tailwaid-->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!--en tete-->
+    <header class="bg-blue-900 text-white py-2">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6">
+            <h1 class="text-3xl font-bold">Mon Portfolio</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#Accueil" class="hover:text-blue-300">Accueil</a></li>
+                    <li><a href="#Competence" class="hover:text-blue-300">Competence</a></li>
+                    <li><a href="#Projets" class="hover:text-blue-300">Projets</a></li>
+                    <li><a href="#Deplome" class="hover:text-blue-300">Deplome</a></li>
+                    <li><a href="#Contact" class="hover:text-blue-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+ <!-- objectif -->
+ <section class="bg-gray-200 py-12">
+    <div class="max-w-7xl mx-auto px-7">
+        <h2 id="Accueil" class="text-4xl font-semibold text-center text-blue-600">Accueil</h2>
+        <div class="mt-8  justify-center text-center ">
+            <p>Salut, je m'appelle rzouga rima et je vous souhaite la bienvenue sur mon portfolio. </p>
+            <p> Découvrez mes projets et mes compétences ci-dessous.</p>
+        </div>
+    </div>
+</section>
+ <!-- competence -->
+ <section class="bg-gray-100 py-12">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 id="Competence" class="text-4xl font-semibold text-center text-blue-600">Competence</h2>
+        <h3 class="text-xl font-semibold text-center text-red-600 mt-4">langages de programation</h3>
+        <div class="mt-8 flex justify-center space-x-6">
+            <span class="bg-blue-600 text-white py-2 px-5 rounded-full">HTML</span>
+            <span class="bg-blue-600 text-white py-2 px-5 rounded-full">CSS </span>
+            <span class="bg-blue-600 text-white py-2 px-4 rounded-full">BootStrap </span>
+            <span class="bg-blue-600 text-white py-2 px-4 rounded-full">TailWind </span>
+            <span class="bg-blue-600 text-white py-2 px-4 rounded-full">JavaScript </span>
+        </div>
+    </div>
+</section>
+ <!-- projet -->
+ <section class="my-12 px-6">
+    <h2 id="Projets" class="text-4xl font-semibold text-center text-blue-600">Mon Projets</h2>
+    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Article 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="./21.png" alt="Image article 1" class="w-full h-80 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold">Paget Web de login</h3>
+                <p class="mt-2 text-gray-600">nous avons utilisé que html et css réactive et pour la décoration pour produire une page Web de boutique</p>
+            </div>
+        </div>
+        <!-- Article 2 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="./2.png" alt="Image article 2" class="w-full h-80 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold">Paget Web de restaurant</h3>
+                <p class="mt-2 text-gray-600">Une page web Gaming Sotre avec BootStrap 5 sur cette page, nous n'avons utilisé que bootstrap 5 pour une page Web réactive et pour la décoration pour produire une page Web de boutique</p>
+            </div>
+        </div>
+        <!-- Article 3-->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="./654.png" alt="Image article 3" class="w-full h-80 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold">Paget Web avec TailWind</h3>
+                <p class="mt-2 text-gray-600">Sur cette page, nous n'avons utilisé que le vent rapide pour une page Web réactive</p>
+            </div>
+        </div>
+    </div>
+</section>
+ <!-- Articles récents -->
+ <section class="my-12 px-6">
+    <h2 id="Deplome" class="text-4xl font-semibold text-center text-blue-600">Diplôme</h2>
+    <ul class="mt-8 space-y-6">
+        <li class="border-b pb-4">
+            <h3 class="text-xl font-semibold">Développeur Web</h3>
+            <p class="text-gray-600">GOMYCODE</p>
+            <p class="text-gray-600">2024 - 2025</p>
+        </li>
+        <li class="border-b pb-4">
+            <h3 class="text-xl font-semibold">BTS informatique de gestion</h3>
+            <p class="text-gray-600">Centre IMSET</p>
+            <p class="text-gray-600">2022 - 2024</p>
+        </li>
+        <li class="border-b pb-4">
+            <h3 class="text-xl font-semibold">BTP informatique de gestion</h3>
+            <p class="text-gray-600">Centre megrine</p>
+            <p class="text-gray-600">2020 - 2022</p>
+        </li>
+    </ul>
+</section>
+<!-- Formulaire d'abonnement -->
+<section class="bg-gray-200 py-12 text-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 id="Contact" class="text-3xl font-bold text-blue-600">Contacte-moi</h2>
+        <form>
+            <label for="name" class="mt-4 text-gray-600 text-xl">Nom :</label>
+            <input type="text" id="name" name="name" class="p-2  text-gray-800 mt-4" required>
+            <label for="email" class="mt-4 text-gray-600 text-xl">Email :</label>
+            <input type="email" id="email" name="email" class="p-2  text-gray-800 mt-4"  required><br>
+            <label for="message" class="mt-4 text-gray-600 text-xl">Message :</label><br>
+            <textarea id="message" name="message" rows="5" cols="60" class="p-2  text-gray-800 mt-4"  required></textarea><br>
+            <button type="submit" class="bg-gray-800 text-white py-3 px-6 hover:bg-blue-900 mt-4">S'abonner</button>
+        </form>
+        </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-white py-6">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between ">
+        <p> 2024 Mon Blog. cette page de mon portfolio</p>
+        <div class="space-x-4">
+            <a href="https://www.facebook.com/" class="text-white hover:text-blue-400">Facebook</a>
+            <a href="https://www.instagram.com/" class="text-white hover:text-blue-400">Instagram</a>
+        </div>
+    </div>
+</footer>
+     </body>
+</html>
